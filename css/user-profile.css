@@ -1,0 +1,54 @@
+.user-pic{
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+	margin-left:40%;
+    position: relative;
+}
+.user-pic img{ 
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.user-pic a span img {
+    position: absolute;
+    bottom:-15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.update_btn{
+	right:0px;
+	width:100px;
+	height:40px;
+	border-radius:20px;
+	background-color:#0000ff;
+	color:white;
+	margin-left:41%;
+}
+
+
+#name{
+	text-align:center;
+	color:#3366ff;
+}
+
+.user-profile-table{
+	border:none;
+}
+
+.user-profile-table tr{
+	border:1px solid blue;
+	border-radius:10px;
+	background-color:white;
+}
+
+.user-profile-table td{
+	padding-top:10px;
+	border:none;
+	height:auto;
+	padding-bottom:10px;
+}

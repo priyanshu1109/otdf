@@ -1,0 +1,101 @@
+.title_head{
+	margin-left:30px;
+	color: #00ccff;
+}
+
+.description{
+	width:800px;
+	min-height:300px;
+	height:auto;
+	margin-left:30px;
+	border: 1px solid #ecffff;
+	background-color:white;
+	padding:5px 5px 5px 5px;
+}
+
+.activity{
+	position: relative;
+	width:800px;
+	height:50px;
+	margin-left:30px;
+	padding:5px 5px 5px 5px;
+}
+
+.activity .answer_btn{
+	position:absolute;
+	right:0px;
+	width:100px;
+	height:40px;
+	border-radius:20px;
+	background-color:#0000ff;
+	color:white;
+	position:absolute;
+}
+
+.activity1{
+	position: relative;
+	width:1100px;
+	height:50px;
+	margin-left:30px;
+	padding:5px 5px 5px 5px;
+}
+
+.activity1 .answer_btn{
+	position:absolute;
+	right:0px;
+	width:100px;
+	height:40px;
+	border-radius:20px;
+	background-color:#0000ff;
+	color:white;
+}
+
+.description1{
+	width:100%;
+	height:auto;
+	margin-left:30px;
+	border: 1px solid #ecffff;
+	background-color:white;
+	padding:5px 5px 5px 5px;
+}
+
+.response{
+	width:800px;
+	height:auto;
+	margin-left:30px;
+	background-color:#e6fdff;
+	padding:5px 10px 5px 5px;
+	margin-bottom:10px;
+	border:1px solid blue;
+	border-radius:5px;
+	font-size:20px;
+	background-color:#ececec;
+}
+
+.user-info span{
+	padding-left:20px;
+	font-size:16px;
+}
+
+.btn-group {
+    position:absolute;
+	left:0px;
+	width: 100%;
+}
+.btn-group .btn-main {
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid #1976D2;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1976D2;
+    display: inline-block;
+    margin-right: 10px;
+}
+.btn-group .btn-main img {
+    display: inline-block;
+    margin-right: 10px;
+}

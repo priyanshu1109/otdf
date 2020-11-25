@@ -1,0 +1,58 @@
+#logo{
+	height:100px;
+	width:200px;
+}
+#header{
+	height:100px;
+	background-color:#161616;
+	position:relative;
+}
+#menu{
+	height:30px;
+	width:300px;
+	position:absolute;
+	left:900px;
+	top:0px;
+	text-align:right;
+	padding:0px 20px;
+}
+
+#welcome{
+	height:30px;
+	width:300px;
+	position:absolute;
+	left:998px;
+	top:68px;
+	background-color:blue;
+	color:white;
+	border:1px solid white;
+	font-size:22px;
+}
+
+.a{
+	text-decoration:none;
+	font-size:20px;
+	background-color:blue;
+	color:white;
+	border:1px solid white;
+}
+
+#form1{
+	background-color:#aeffff;
+	margin:0px auto;
+	width:300px;
+	height:300px;
+	padding:40px 40px;
+	margin-top:50px;
+	border:3px #33ffff;
+	border-radius:10px;
+	box-shadow:5px 5px #33ffff;
+}
+
+#mid-container{
+	margin-top:0px;
+	/*border:1px solid green;*/
+	background-color:#e8ffff;
+	height:550px;
+}
+

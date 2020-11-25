@@ -1,0 +1,26 @@
+#main-container{
+	width:1300px;
+	margin:0px auto;
+	background-color:#e8ffff;
+	top:0px;
+	height:auto;
+}
+
+.input{
+	color:black;
+	background-color:#e3fdf5;
+	border:2px solid #3300ff;
+	height:30px
+	border-radius:5px;
+}
+
+.button{
+	background-color:#33ffff;
+	color:black;
+	font-weight:bold;
+	font-size:20px;
+	border:1px solid white;
+	cursor:pointer;
+	height:30px;
+	width:150px;
+}

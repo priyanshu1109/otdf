@@ -1,0 +1,28 @@
+#q_tit{
+	width:1050px;	
+	height:30px;
+	border:1px solid red;
+	font-size:24px;
+}
+
+#q_desc{
+	width:1135px;
+	height:200px;
+	border:1px solid red;
+	font-size:20px;
+}
+#post_form{
+	margin-left:30px;
+}
+#post_submit{
+	width:60px;
+	height:30px;
+	text-align:center;
+}
+
+#r_desc{
+	width:1135px;
+	height:200px;
+	border:1px solid red;
+	font-size:20px;
+}

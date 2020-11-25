@@ -1,0 +1,17 @@
+#tp_title{
+	width:90%;
+	margin:20px auto 0px auto;
+	
+}
+
+span{
+	font-family:verdana;
+	font-size:20px;
+	background-color:#ffffcc;
+	color:#ff0066;
+}
+
+#tp_button{
+	float:right;
+	font-size:18px;
+}

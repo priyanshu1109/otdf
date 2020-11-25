@@ -1,0 +1,19 @@
+#user_reports{
+	width:1250px;
+	margin-left:20px;
+	margin-right:20px;
+	border:1px solid red
+}
+
+#user_reports tr{
+	padding:5px;
+	height:20px;
+	border:1px solid yellow;
+}
+
+#user_reports tr td{
+	padding:5px;
+	width:25%;
+	border:1px solid green;
+	text-align:center;
+}
