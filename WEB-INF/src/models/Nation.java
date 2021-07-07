@@ -27,7 +27,7 @@ public class Nation{
 		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 
 			String query = "select * from nation";
 			PreparedStatement p = con.prepareStatement(query);

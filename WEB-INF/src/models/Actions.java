@@ -14,7 +14,7 @@ public class Actions{
 	Connection con = null;
 	try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="select * from action where user_id=? and post_id=? and action_type_id=1";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setInt(1,userId);
@@ -43,7 +43,7 @@ public class Actions{
 	Connection con = null;
 	try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="select * from action where user_id=? and post_id=? and action_type_id=3";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setInt(1,userId);
@@ -72,7 +72,7 @@ public class Actions{
 	Connection con = null;
 	try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="select * from action where user_id=? and post_id=? and action_type_id=2";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setInt(1,userId);
@@ -101,7 +101,7 @@ public class Actions{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "insert into action (post_id,user_id,action_type_id) values(?,?,?)";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post.getPostId());
@@ -128,7 +128,7 @@ public class Actions{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "delete from action where post_id=? and user_id=? and action_type_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post.getPostId());

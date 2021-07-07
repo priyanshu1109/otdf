@@ -17,7 +17,7 @@ public class Response extends Post{
 		Connection con = null;
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 				String query="select response_id,r.post_id,post_date_time,post,p.user_id,name,p.status_id,status from response as r inner join post as p inner join users as u inner join status as s where question_id=? and r.post_id=p.post_id and p.status_id=s.status_id and p.user_id=u.user_id";
 				PreparedStatement p = con.prepareStatement(query);
 				p.setInt(1,question_id);
@@ -52,7 +52,7 @@ public boolean increaseCount(){
 	Connection con = null;
 	try{
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 		String query="update question set response_count=response_count+1 where question_id=?";
 		PreparedStatement p = con.prepareStatement(query);
 		p.setInt(1,question.getQuestionId());
@@ -82,7 +82,7 @@ public boolean saveResponse(){
 	Connection con = null;
 	try{
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 		String query="insert into response (question_id,post_id) value (?,?)";
 		PreparedStatement p = con.prepareStatement(query);
 		p.setInt(1,question.getQuestionId());

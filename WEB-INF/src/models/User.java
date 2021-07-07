@@ -52,7 +52,7 @@ public boolean loginUser(){
 		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=12345656");
 
 			String query = "select * from users where email=? and password=?";
 			PreparedStatement p = con.prepareStatement(query);
@@ -89,7 +89,7 @@ public boolean loginUser(){
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=12345656");
 
 			String query = "insert into users (name,email,password,user_type_id) values (?,?,?,1)";
 			PreparedStatement p = con.prepareStatement(query);
@@ -124,7 +124,7 @@ public boolean loginUser(){
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=12345656");
 			String query = "update users set dob=?,organization=?,nation_id=? where user_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setDate(1,dob);
@@ -153,7 +153,7 @@ public boolean loginUser(){
 		Connection con = null;
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=12345656");
 				String query="select user_id,name,dob,u.nation_id,organization,question_count,response_count,nation from users as u inner join nation as n where user_id=? and n.nation_id=u.nation_id";
 				PreparedStatement p = con.prepareStatement(query);
 				p.setInt(1,userId);
@@ -193,7 +193,7 @@ public boolean loginUser(){
 		Connection con = null;
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=12345656");
 				String query="select user_id,name,email,question_count,response_count from users";
 				PreparedStatement p = con.prepareStatement(query);
 				ResultSet r = p.executeQuery();

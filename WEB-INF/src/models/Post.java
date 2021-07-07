@@ -29,7 +29,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "select like_count,dislike_count,spam_count from post where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -63,7 +63,7 @@ public class Post{
 		ArrayList<Post> postDislike = new ArrayList<Post>();
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "select dislike_count from post where post_id=?";
 			PreparedStatement ps = con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -95,7 +95,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set like_count=like_count+1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -120,7 +120,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set like_count=like_count-1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -146,7 +146,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set spam_count=spam_count+1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -171,7 +171,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set spam_count=spam_count-1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -197,7 +197,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set dislike_count=dislike_count+1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -222,7 +222,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update post set dislike_count=dislike_count-1 where post_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,post_id);
@@ -247,7 +247,7 @@ public class Post{
 			Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="insert into post (post,user_id,post_type_id) value (?,?,?)";
 			//String query2 = "update users set question_count=question_count+1 where user_id=?";
 			PreparedStatement p = con.prepareStatement(query,Statement.RETURN_GENERATED_KEYS);
@@ -286,7 +286,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="update users set question_count = question_count+1 where user_id=?";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setInt(1,user.getUserId());
@@ -313,7 +313,7 @@ public class Post{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="update users set response_count = response_count+1 where user_id=?";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setInt(1,user.getUserId());

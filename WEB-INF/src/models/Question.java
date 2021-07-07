@@ -30,7 +30,7 @@ public class Question extends Post{
 			Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query="insert into question (title,topic_id,post_id) value (?,?,?)";
 			PreparedStatement p = con.prepareStatement(query);
 			p.setString(1,title);
@@ -62,7 +62,7 @@ public class Question extends Post{
 		Connection con = null;
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 				String query="select question_id,title,q.response_count,view_count,post_date_time,p.user_id,name,p.status_id,status,p.post_id,like_count from question as q inner join post as p inner join users as u inner join status as s where topic_id=? and q.post_id=p.post_id and p.status_id=s.status_id and p.user_id=u.user_id";
 				PreparedStatement p = con.prepareStatement(query);
 				p.setInt(1,topicId);
@@ -102,7 +102,7 @@ public class Question extends Post{
 		Connection con = null;
 		try{
 				Class.forName("com.mysql.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 				String query="select question_id,title,q.response_count,view_count,post_date_time,p.post,p.user_id,name,p.status_id,status,p.like_count from question as q inner join post as p inner join users as u inner join status as s where question_id=? and q.post_id=p.post_id and p.status_id=s.status_id and p.user_id=u.user_id";
 				PreparedStatement p = con.prepareStatement(query);
 				p.setInt(1,question_id);

@@ -27,7 +27,7 @@ public class Topic{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "insert into topics (topic) values(?)";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setString(1,topic);
@@ -52,7 +52,7 @@ public class Topic{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "select * from topics";
 			PreparedStatement ps= con.prepareStatement(query);
 			ResultSet r = ps.executeQuery();
@@ -85,7 +85,7 @@ public class Topic{
 		Connection con = null;
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=1234");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/otdf?user=root&password=123456");
 			String query = "update topics set question_count=question_count+1,open_question=open_question+1 where topic_id=?";
 			PreparedStatement ps= con.prepareStatement(query);
 			ps.setInt(1,topic_id);
